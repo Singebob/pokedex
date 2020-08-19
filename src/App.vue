@@ -1,25 +1,29 @@
 <template>
    <div class="q-pa-md row justify-center q-gutter-md">
-     <CardPokemon />
-     <CardPokemon />
-     <CardPokemon />
+     <PokeCard />
+     <PokeCard />
+     <PokeCard />
   </div>
 </template>
 
 <script>
-import CardPokemon from '@/components/cardPokemon.vue';
+import PokeCard from '@/components/PokeCard.vue';
 
 export default {
   name: 'app',
   components: {
-    CardPokemon,
+    PokeCard,
   },
 
 };
 </script>
 
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 350px
+<style lang="sass">
+body
+  background-image: url('./assets/pokeball.svg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  background-attachment: fixed
+
 </style>
